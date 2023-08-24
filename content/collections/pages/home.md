@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692734536
+updated_at: 1692918433
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -65,5 +65,5 @@ page_builder:
 headline: |-
   Herzlich Willkommen auf der Homepage
   der Zahnarztpraxis Dr. Volker Küspert
-banner_image: zvk_home.jpg
+banner_image: zvk_home-1692918430.jpg
 ---

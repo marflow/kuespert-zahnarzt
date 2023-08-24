@@ -25,6 +25,6 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692819443
-banner_image: zvk_lageplan.jpg
+updated_at: 1692918506
+banner_image: zvk_lageplan-1692918505.jpg
 ---

@@ -28,6 +28,6 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692782063
-banner_image: zvk_leistungen.jpg
+updated_at: 1692918463
+banner_image: zvk_leistungen-1692918460.jpg
 ---
