@@ -1,0 +1,77 @@
+title: Praxisinfo
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: praxisname
+        field:
+          type: text
+          display: Praxisname
+          width: 50
+      -
+        handle: zusatzbezeichnung
+        field:
+          type: text
+          display: Zusatzbezeichnung
+          width: 50
+      -
+        handle: strasse
+        field:
+          type: text
+          display: Straße
+          width: 50
+      -
+        handle: ort
+        field:
+          type: text
+          display: Ort
+          width: 50
+      -
+        handle: telefon
+        field:
+          type: text
+          display: Telefon
+          width: 33
+      -
+        handle: telefonlink
+        field:
+          type: text
+          display: TelefonLink
+          width: 33
+      -
+        handle: fax
+        field:
+          type: text
+          display: Fax
+          width: 33
+      -
+        handle: email
+        field:
+          type: text
+          display: Email
+          width: 50
+      -
+        handle: url
+        field:
+          type: text
+          display: URL
+          width: 50
+      -
+        handle: kammer
+        field:
+          type: textarea
+          display: Kammer
+          width: 50
+      -
+        handle: aufsichtsbehoerde
+        field:
+          type: textarea
+          display: Aufsichtsbehörde
+          width: 50
+      -
+        handle: berufsrechtliches
+        field:
+          type: textarea
+          display: Berufsrechtliches
+taxonomies: true

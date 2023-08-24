@@ -1,0 +1,11 @@
+<div class="flex flex-wrap{{ if caption_position == "caption_left" }} flex-row-reverse{{ /if }}{{ if caption_position == "caption_above" }} flex-wrap-reverse{{ /if }}">
+
+    <div class="{{ if caption_position == "caption_above" || caption_position == "caption_below" }}w-full {{ else }} md:w-3/4 {{ /if }}flex flex-wrap">
+        {{ partial:snippets/video }}
+    </div>
+
+    <div class="{{ if caption_position == "caption_above" || caption_position == "caption_below" }}w-full {{ else }} md:w-1/4 {{ /if }}self-end">
+        {{ partial:snippets/caption }}
+    </div>
+
+</div>

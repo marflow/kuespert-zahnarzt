@@ -1,0 +1,24 @@
+<div class="flex flex-wrap">
+    {{ assets:images }}
+        <div class="p-2 w-full
+            {{ if total_results=="2" }}
+                md:w-1/2
+            {{ elseif total_results=="3"}}
+                md:w-1/3
+            {{ elseif total_results=="4"}}
+                md:w-1/4
+            {{ else }}
+                w-full
+            {{ /if }}">
+            {{ if image_ratio=="landscape"}}
+                <img class="block" src="{{ glide:url width="900" height="600" fit="crop_focal" }}" width="auto" height="auto" alt="{{ alt }}" />
+            {{ elseif image_ratio=="square"}}
+            <img class="block" src="{{ glide:url width="600" height="600" fit="crop_focal" }}" width="auto" height="auto" alt="{{ alt }}" />
+            {{ elseif image_ratio=="portrait"}}
+                <img class="block" src="{{ glide:url width="600" height="900" fit="crop_focal" }}" width="auto" height="auto" alt="{{ alt }}" />
+          {{ else }}
+              <img class="block" src="{{ glide:url width="600" height="auto" fit="crop_focal" }}" width="auto" height="auto" alt="{{ alt }}" />
+            {{ /if }}
+        </div>
+    {{ /assets:images }}
+</div>

@@ -1,0 +1,15 @@
+<div class="h-full px-8 py-4 bg-blue-900 rounded-sm">
+    {{ sprechzeiten:anmeldung }}
+        <div class="mb-6 flex items-center">
+            <svg class="h-5 w-5 mr-2 text-blue-200 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M12.3 3.7l4 4L4 20H0v-4L12.3 3.7zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z" /></svg>
+            <h3 class="text-blue-200 ">{{ ueberschrift }}</h3>
+        </div>
+        <div class="text-sm text-blue-200">
+            {{ text }}
+        </div>
+        <div class="w-full py-4 text-sm text-center">
+            <a class="inline-block py-2 px-4 border border-blue-600 rounded text-blue-200 bg-blue-700 hover:text-white hover:bg-blue-800" href="{{ fragebogen }}">Fragebogen herunterladen</a>
+        </div>
+    {{ /sprechzeiten:anmeldung }}
+</div>

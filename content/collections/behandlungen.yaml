@@ -1,0 +1,18 @@
+title: Behandlungen
+template: default
+layout: layout
+mount: 3f903c97-6172-4141-9bc4-3fbbf881f47e
+revisions: false
+route: 'behandlungen/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: false
+  max_depth: 1

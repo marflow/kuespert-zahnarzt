@@ -1,0 +1,25 @@
+{{#
+    @name team index
+    @desc The team index template.
+#}}
+
+<!-- /team/index.antlers.html -->
+<main class="outer-grid" id="content">
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>
+<!-- End: /team/index.antlers.html -->
+
+{{ section:index_content }}
+    <!-- /team/index.antlers.html -->
+    <div class="fluid-container mt-4 md:mt-12 grid md:grid-cols-12 gap-12">
+        {{ collection:team as="items" }}
+                {{ items }}
+                    {{ partial:components/team_item class="md:col-span-3" }}
+                {{ /items }}
+
+        {{ /collection:team }}
+    </div>
+    <!-- End: /team/index.antlers.html -->
+{{ /section:index_content }}

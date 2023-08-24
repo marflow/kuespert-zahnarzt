@@ -1,0 +1,9 @@
+title: 'Social media'
+data:
+  social_media:
+    -
+      id: llouwedp
+      handle: '%2Fstory.php%3Fstory_fbid%3Dpfbid0u5iBJG9pdymiTSqjt9Ay37cc7iAZkBBeLwQTNNS2tbgNxUBbsLHUD6uLpsgXwJMLl%26id%3D100086877576212&refsrc=deprecated&_rdr'
+      prefix: 'https://www.facebook.com/'
+      type: facebook
+      enabled: true

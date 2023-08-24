@@ -1,0 +1,36 @@
+title: Praxis
+data:
+  praxisname: 'Dr. med. dent. Volker Küspert'
+  zusatzbezeichnung: Zahnarztpraxis
+  strasse: 'Raiffeisenstr. 1'
+  ort: '86830 Schwabmünchen'
+  telefon: 08232-72227
+  telefonlink: '+49823272227'
+  fax: '08232 / 78548'
+  email: info@kuespert-zahnarzt.de
+  url: 'https://www.kuespert-zahnarzt.de'
+  kammer: |-
+    Bayerische Landeszahnärztekammer<br>
+    Flößergasse 1<br>
+    81369 München<br>
+     <br>
+    Telefon: 089/230211-0<br>
+    Telefax: 089/230211-108<br>
+    Internet: www.blzk.de
+  aufsichtsbehoerde: |-
+    Kassenzahnärztliche Vereinigung Bayern<br>
+    Fallstraße 34<br>
+    81369 München<br>
+     <br>
+    Telefon: 089/72401-0<br>
+    Telefax: 089/72401-291<br>
+    Internet: www.kzvb.de
+  berufsrechtliches: |-
+    Es gelten folgende berufsrechtliche Regelungen:<br>
+     <br>
+    - Heilberufe Kammergesetz<br>
+    - Zahnheilkundegesetz<br>
+    - Berufsordnung<br>
+    - Gebührenordnung für Zahnärzte (GOZ)<br>
+    <br>
+    Die oben genannten Regelungen sind einsehbar auf der Website der Bayerischen Landeszahnärztekammer im Menüpunkt „Recht“ (www.blzk.de/blzk/site.nsf/id/pa_recht.html).

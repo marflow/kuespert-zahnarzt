@@ -1,0 +1,52 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: general
+            field:
+              type: section
+              display: General
+              icon: section
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: headline
+            field: common.text_plain
+            config:
+              display: Headline
+          -
+            handle: introtext
+            field: common.text_basic
+            config:
+              display: Introtext
+          -
+            handle: banner_image
+            field: common.image
+            config:
+              display: 'Banner Image'
+          -
+            handle: page_builder
+            field: page_builder.page_builder
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+title: Behandlungen

@@ -1,0 +1,22 @@
+{{#
+    @name Article
+    @desc The article page builder block. It extends the prose typography partial.
+    @set page.page_builder.article
+#}}
+
+<!-- /page_builder/_article.antlers.html -->
+<section class="fluid-container grid grid-cols-12">
+
+
+
+	<div class="col-span-12 mb-4 md:mb-12 lg:mb-16 text-3xl font-light text-primary">
+		{{ headline | nl2br }}
+	</div>
+
+    {{ partial:typography/prose as="article" class="contents" }}
+        {{ article }}
+            {{ partial src="components/{type}" }}
+        {{ /article }}
+    {{ /partial:typography/prose }}
+</section>
+<!-- End: /page_builder/_article.antlers.html -->

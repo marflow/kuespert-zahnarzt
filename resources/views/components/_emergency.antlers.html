@@ -1,0 +1,12 @@
+{{ sprechzeiten:notfall }}
+<div class="h-full rounded-sm">
+    <div class="mb-2 flex items-center">
+        <svg class="w-6 h-6 mr-2 text-blue-400 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M11 9h4v2h-4v4H9v-4H5V9h4V5h2v4zm-1 11a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/>
+        </svg>
+        <h3 class="font-semibold text-sm uppercase tracking-wider text-blue-400">{{ ueberschrift }}</h3>
+    </div>
+    <div class="text-sm text-white">{{ text }}</div>
+    <p class="mt-2 py-2"><a class="px-4 py-2 rounded border border-blue-800 text-sm font-semibold text-blue-200 bg-blue-700/20 hover:text-white" href="{{ website }}">{{ website }}</a></p>
+</div>
+{{ /sprechzeiten:notfall }}

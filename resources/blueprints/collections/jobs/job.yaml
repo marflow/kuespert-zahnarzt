@@ -1,0 +1,156 @@
+title: Job
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: banner_image
+            field: common.image
+            config:
+              display: 'Banner image'
+          -
+            handle: introtext
+            field: common.text_basic
+            config:
+              display: Introtext
+          -
+            handle: taetigkeit
+            field:
+              type: bard
+              display: Tätigkeitsbeschreibung
+              save_html: true
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - html
+                - quote
+                - codeblock
+                - h1
+                - h2
+                - h3
+                - h4
+                - h5
+                - h6
+                - anchor
+          -
+            handle: qualifikation
+            field:
+              type: bard
+              display: Qualifikation
+              save_html: true
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - html
+                - quote
+                - codeblock
+                - h1
+                - h2
+                - h3
+                - h4
+                - h5
+                - h6
+                - anchor
+          -
+            handle: leistungen
+            field:
+              type: bard
+              display: Leistungen
+              save_html: true
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - html
+                - quote
+                - codeblock
+                - h1
+                - h2
+                - h3
+                - h4
+                - h5
+                - h6
+                - anchor
+          -
+            handle: arbeitszeit
+            field:
+              type: select
+              options:
+                - Vollzeit
+                - Teilzeit
+                - 'Vollzeit und Teilzeit möglich'
+              display: Arbeitszeit
+          -
+            handle: aufforderung
+            field:
+              type: bard
+              display: Aufforderung
+              save_html: true
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - html
+                - quote
+                - codeblock
+                - h1
+                - h2
+                - h3
+                - h4
+                - h5
+                - h6
+                - anchor
+          -
+            handle: web
+            field:
+              type: text
+              display: 'Ausschreibung im Web'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - jobs
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required

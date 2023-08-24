@@ -1,0 +1,160 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: zeiten
+        field:
+          type: grid
+          mode: table
+          add_row: 'Tag hinzufügen'
+          fields:
+            -
+              handle: wochentag
+              field:
+                type: text
+                display: Wochentag(e)
+            -
+              handle: vormittag
+              field:
+                type: text
+                display: 'Vormittag (oder durchgehend)'
+            -
+              handle: nachmittag
+              field:
+                type: text
+                display: Nachmittag
+          display: Zeiten
+      -
+        handle: hinweis_besondere_sprechzeiten
+        field:
+          type: textarea
+          display: 'Hinweis Besondere Sprechzeiten'
+      -
+        handle: terminvereinbarung
+        field:
+          type: grid
+          mode: stacked
+          max_rows: 1
+          fields:
+            -
+              handle: ueberschrift
+              field:
+                type: text
+                display: Überschrift
+                width: 25
+            -
+              handle: text
+              field:
+                type: bard
+                restrict_assets: false
+                display: Text
+                width: 75
+                save_html: true
+                buttons:
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - html
+                  - quote
+                  - codeblock
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - anchor
+          display: Terminvereinbarung
+      -
+        handle: anmeldung
+        field:
+          type: grid
+          mode: stacked
+          max_rows: 1
+          fields:
+            -
+              handle: ueberschrift
+              field:
+                type: text
+                display: Überschrift
+                width: 25
+            -
+              handle: text
+              field:
+                type: bard
+                restrict_assets: false
+                display: Text
+                width: 75
+                save_html: true
+                buttons:
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - html
+                  - quote
+                  - codeblock
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - anchor
+            -
+              handle: fragebogen
+              field:
+                type: assets
+                container: files
+                restrict: false
+                max_files: 1
+                mode: grid
+                display: Fragebogen
+          display: Anmeldung
+      -
+        handle: notfall
+        field:
+          type: grid
+          mode: stacked
+          max_rows: 1
+          fields:
+            -
+              handle: ueberschrift
+              field:
+                type: text
+                display: Überschrift
+                width: 25
+            -
+              handle: text
+              field:
+                type: bard
+                restrict_assets: false
+                display: Text
+                width: 75
+                save_html: true
+                buttons:
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - html
+                  - quote
+                  - codeblock
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - anchor
+            -
+              handle: website
+              field:
+                type: text
+                display: Website
+                width: 33
+          display: Notfall
+taxonomies: false
+title: Sprechzeiten

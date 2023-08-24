@@ -1,0 +1,169 @@
+title: Aktuelles
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: headline
+            field: common.text_plain
+            config:
+              display: Headline
+          -
+            handle: introtext
+            field: common.text_basic
+            config:
+              display: Introtext
+          -
+            handle: banner_image
+            field: common.image
+            config:
+              display: 'Banner Image'
+          -
+            handle: content_elements
+            field:
+              type: replicator
+              sets:
+                text_set:
+                  display: Text
+                  fields:
+                    -
+                      handle: text
+                      field:
+                        type: bard
+                        restrict_assets: false
+                        display: Text
+                        save_html: true
+                        buttons:
+                          - bold
+                          - italic
+                          - unorderedlist
+                          - orderedlist
+                          - html
+                          - quote
+                          - codeblock
+                          - h1
+                          - h2
+                          - h3
+                          - h4
+                          - h5
+                          - h6
+                          - anchor
+                image_set:
+                  display: Bild
+                  fields:
+                    -
+                      handle: images
+                      field:
+                        type: assets
+                        container: images
+                        restrict: true
+                        max_files: 4
+                        mode: grid
+                        display: Bild(er)
+                    -
+                      handle: image_ratio
+                      field:
+                        type: select
+                        options:
+                          landscape: Querformat
+                          square: Quadrat
+                          portrait: Hochformat
+                          original: Original
+                        display: Seitenverhältnis
+                    -
+                      handle: caption
+                      field:
+                        type: textarea
+                        display: Legende
+                table_set:
+                  display: Tabelle
+                  fields:
+                    -
+                      handle: table
+                      field:
+                        type: table
+                        display: Tabelle
+                    -
+                      handle: caption
+                      field:
+                        type: textarea
+                        display: Legende
+                quote_set:
+                  display: Zitat
+                  fields:
+                    -
+                      handle: quote
+                      field:
+                        type: textarea
+                        display: Zitat
+                    -
+                      handle: author
+                      field:
+                        type: text
+                        display: Urheber
+                cta_set:
+                  display: Aufforderung
+                  fields:
+                    -
+                      handle: text
+                      field:
+                        type: bard
+                        container: main
+                        folder: images
+                        restrict_assets: true
+                        display: Text
+                        save_html: true
+                        buttons:
+                          - bold
+                          - italic
+                          - unorderedlist
+                          - orderedlist
+                          - html
+                          - image
+                          - quote
+                          - codeblock
+                          - h1
+                          - h2
+                          - h3
+                          - h4
+                          - h5
+                          - h6
+                          - anchor
+                    -
+                      handle: link_title
+                      field:
+                        type: text
+                        display: Linkbeschriftung
+                    -
+                      handle: link_target
+                      field:
+                        type: text
+                        display: Linkziel
+              display: Eintragsblöcke
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required

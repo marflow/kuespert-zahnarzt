@@ -1,0 +1,32 @@
+title: Sprechzeiten
+data:
+  zeiten:
+    -
+      id: nusGJNZX
+      wochentag: 'Montag – Donnerstag'
+      vormittag: '8 Uhr – 12 Uhr'
+      nachmittag: '14 Uhr – 18 Uhr'
+    -
+      id: LqzFzhWQ
+      wochentag: Freitag
+      vormittag: '8 Uhr – 12 Uhr'
+    -
+      id: 863gTw45
+      wochentag: 'Termine nach Vereinbarung'
+  terminvereinbarung:
+    -
+      id: EdsRuj1Y
+      ueberschrift: Terminvereinbarung
+      text: '<p>Termine können Sie gerne telefonisch während unserer Öffnungszeiten vereinbaren. Daneben können Sie auch das <a href="https://www.kuespert-zahnarzt.de/kontakt">Kontaktformular</a> dieser Website nutzen, wenn Sie Fragen haben oder einen Termin vereinbaren möchten. Wir rufen Sie dann baldmöglich zurück.</p>'
+  anmeldung:
+    -
+      id: aYNmjUc2
+      ueberschrift: 'Kommen Sie zum ersten Mal zu uns?'
+      text: '<p>Vor Ihrem ersten Besuch können Sie hier unseren Gesundheitsfragebogen herunterladen, um ihn bequem zuhause auszufüllen. Den geben Sie dann einfach an der Rezeption ab und haben die Formalitäten ganz schnell erledigt.</p>'
+      fragebogen: gesundheitsfragebogen-dr-kuespert.pdf
+  notfall:
+    -
+      id: TjCuKWst
+      ueberschrift: 'Im Notfall'
+      text: '<p>Den aktuellen Notdienst entnehmen Sie bitte der Tagespresse oder der Internetseite der KZVB:</p>'
+      website: 'https://www.notdienst-zahn.de'

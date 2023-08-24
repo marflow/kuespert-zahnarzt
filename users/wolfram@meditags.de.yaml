@@ -1,0 +1,39 @@
+super: true
+name: 'Wolfram Gehring'
+id: 8c9816a1-2d9a-4b41-8090-aae253815de3
+password_hash: $2y$10$TfPpSDwBxKN0otT5bfQBpOBZsJ5pYZnXo59QQ.CNB4wBPUyGkb9oa
+preferences:
+  collections:
+    news:
+      columns:
+        - title
+        - headline
+        - banner_image
+        - date
+    team_members:
+      columns:
+        - title
+        - portrait
+        - function
+    team:
+      columns:
+        - title
+        - function
+        - portrait
+    behandlungen:
+      columns:
+        - title
+        - headline
+        - banner_image
+    partner:
+      columns:
+        - title
+        - partner_website
+        - partner_logo
+    jobs:
+      columns:
+        - title
+        - date
+  assets:
+    images:
+      mode: grid

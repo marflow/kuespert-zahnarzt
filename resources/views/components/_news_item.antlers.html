@@ -1,0 +1,32 @@
+{{#
+    @name News item
+    @desc A News item component.
+    @param class Add optional CSS classes.
+#}}
+
+<!-- /components/_news_item.antlers.html -->
+<article class="flex flex-wrap bg-gray-100 {{ class }} gap-y-2">
+
+    <figure class="w-full h-48 md:h-auto md:w-1/3 lg:border-4 lg:border-white">
+        {{ partial:statamic-peak-tools::components/picture :image="banner_image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="3/2" lazy="true" cover="true" class="aspect-[3/2]" }}
+    </figure>
+
+    <div class="w-full md:w-2/3 py-8 lg:py-12 px-8 lg:px-20 lg:border-4 lg:border-white">
+
+        <a href="{{ url }}" class="group p-1 -m-1 focus:outline-none focus-visible:ring-2 ring-primary group">
+            {{ partial:typography/h3 :content="title" class="text-lg md:text-xl text-primary decoration-primary decoration-2 underline-offset-2 group-hover:text-primary/70 motion-safe:transition-colors" }}
+        </a>
+
+        {{ partial:typography/p :content="introtext" as="div" class="text-sm" }}
+
+		<p class="mt-2">
+			<a href="{{ url }}" class="rounded px-4 py-2 text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-700">
+				Mehr zu diesem Thema
+			</a>
+		</p>
+
+    </div>
+
+</article>
+
+<!-- End: /components/_news_item.antlers.html -->

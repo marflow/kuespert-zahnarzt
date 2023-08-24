@@ -1,0 +1,98 @@
+title: 'Page builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      localizable: true
+      hide_display: true
+      collapse: true
+      listable: false
+      display: 'Page builder'
+      sets:
+        interactive:
+          display: Interactive
+          instructions: 'Interactive blocks.'
+          icon: programming-script-code
+          sets:
+            form:
+              display: Form
+              instructions: 'Select and render a form.'
+              icon: mail-chat-bubble-text
+              fields:
+                -
+                  import: form
+            image_credits:
+              display: 'Image credits'
+              instructions: 'List images with their credits.'
+              icon: null
+              fields:
+                -
+                  import: image_credits
+            link_blocks:
+              display: 'Link blocks'
+              instructions: 'Show linkable blocks with text.'
+              icon: link
+              fields:
+                -
+                  import: link_blocks
+            map:
+              display: Lageplan
+              instructions: 'Der Weg in die Praxis'
+              icon: travel-map
+              fields:
+                -
+                  handle: map_section
+                  field:
+                    type: section
+                    display: 'Map Section'
+                    icon: section
+                    instructions: 'Dieser Block generiert den Lageplan. Es sind keine weiteren Felder erforderlich.'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+        text:
+          display: Text
+          instructions: 'Text based blocks.'
+          icon: text-formatting-initial-letter
+          sets:
+            article:
+              display: Article
+              instructions: 'Long form content, can be expanded with media like figures, video, quotes or tables.'
+              icon: text-formatting-image-bottom
+              fields:
+                -
+                  import: article
+            columns:
+              display: Columns
+              instructions: 'Text columns with optional images and buttons.'
+              icon: null
+              fields:
+                -
+                  import: columns
+            divider:
+              display: Divider
+              instructions: 'A visual divider between blocks.'
+              icon: null
+              fields:
+                -
+                  import: divider
+            images_grid:
+              display: 'Images grid'
+              instructions: 'A multi row image grid.'
+              icon: null
+              fields:
+                -
+                  import: images_grid
+            index_content:
+              display: 'Index content'
+              instructions: 'Render the currently mounted entries if available.'
+              icon: null
+              fields:
+                -
+                  import: index_content
+      instructions_position: above
+      visibility: visible
+      previews: true
+      fullscreen: true

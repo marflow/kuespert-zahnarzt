@@ -1,0 +1,24 @@
+{{#
+    @name News index
+    @desc The News index template.
+#}}
+
+<section class="fluid-container grid grid-cols-12">
+
+	<div class="col-span-12 mb-4 md:mb-12 lg:mb-16 text-3xl font-light text-primary">
+		{{ headline | nl2br }}
+	</div>
+
+{{ partial:typography/prose as="article" class="contents" }}
+
+<div class="size-lg font-extralight leading-normal text-gray-600 tracking-wide mb-4 md:mb-12">
+
+        {{# Iterating throught the various field sets of the replicator field. #}}
+        {{ content_elements }}
+            {{ partial src="sets/{type}" }}
+        {{ /content_elements }}
+
+</div>
+	</section>
+{{ /partial:typography/prose }}
+

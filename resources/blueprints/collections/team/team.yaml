@@ -1,0 +1,34 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: function
+            field: common.text_plain
+            config:
+              display: Function
+          -
+            handle: portrait
+            field: common.image
+            config:
+              display: Portrait
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+title: Team

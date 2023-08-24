@@ -1,0 +1,15 @@
+title: Team
+template: default
+layout: layout
+mount: d7f74b07-6618-4e1b-991d-4152f010dc59
+revisions: false
+route: '/{mount}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

@@ -1,0 +1,67 @@
+{{#
+    @name Layout
+    @desc The default layout file.
+#}}
+
+<!-- /layout.antlers.html -->
+<!doctype html>
+<html lang="{{ site:short_locale }}" class="antialiased">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        {{ vite src="resources/css/site.css|resources/js/site.js" }}
+		<script src="../js/2ClickIframePrivacy.min.js"></script>
+        {{ partial:statamic-peak-seo::snippets/seo }}
+        {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
+        {{ partial:statamic-peak-tools::snippets/live_preview }}
+    </head>
+    <body class="bg-gray-100 selection:bg-primary selection:text-white">
+		{{ stack:seo_body }}
+        {{ partial:statamic-peak-tools::snippets/noscript }}
+        {{ partial:statamic-peak-tools::navigation/skip_to_content }}
+        {{ partial:statamic-peak-tools::components/toolbar }}
+		<div class="flex flex-col max-w-[1440px] mx-auto min-h-screen bg-white">
+			{{ partial:layout/header }}
+			<section class="fluid-container grid grid-cols-12">
+			<div class="col-span-12 mb-4 md:mb-12">
+				{{
+				partial:statamic-peak-tools::components/picture
+				:image="banner_image"
+				class="w-full"
+				cover="false"
+				lazy="true"
+				aspect_ratio="3/1"
+				sizes="
+					{{ switch(
+						(size == 'md') => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+						(size == 'lg') => '(min-width: 1280px) 960px, (min-width: 768px) 75vw, 90vw',
+						(size == 'xl') => '(min-width: 1280px) 1150px, 90vw',
+						() => '100vw'
+					)}}
+				"
+			}}
+			</div>
+			</section>
+
+			{{ template_content }}
+			{{ partial:components/aside }}
+			{{ partial:layout/footer }}
+		</div>
+		<script type="text/javascript">
+			var _2ClickIframePrivacyConfig = {
+				showContentLabel: '<span class="py-2 px-4 border border-gray-600 rounded text-blue-200 hover:text-white bg-blue-800 hover:bg-blue-700 shadow">Google Maps laden</span><br>',
+				enableCookies: false,
+				CustomTypes: Array(
+					{
+						type: 'map',
+						description: '<div class="mb-4 text-blue-400">Um einen Lageplan der Praxis auf Google Maps anzuzeigen, klicken Sie auf den Link unten. Durch das Aktivieren werden Nutzungsdaten an Google übermittelt. Weitere Informationen finden Sie in unserer Datenschutzerklärung.</div>'
+					}
+				)
+			};
+
+			document.addEventListener('DOMContentLoaded', _2ClickIframePrivacy.init(_2ClickIframePrivacyConfig));
+		</script>
+    </body>
+</html>
+<!-- End: /layout.antlers.html -->
