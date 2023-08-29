@@ -15,7 +15,7 @@
 {{ section:index_content }}
     <!-- /behandlungen/index.antlers.html -->
     <div class="mt-4 md:mt-12 fluid-container grid md:grid-cols-12 gap-2">
-        {{ collection:behandlungen paginate="true" limit="12" as="items" }}
+        {{ collection:behandlungen order="sort|asc" paginate="true" limit="12" as="items" }}
             {{ unless no_results }}
                 {{ items }}
                     {{ partial:components/behandlungen_item class="md:col-span-12" }}
