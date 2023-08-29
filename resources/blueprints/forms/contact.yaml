@@ -9,17 +9,50 @@ tabs:
             field:
               display: Name
               type: text
-              validate: required
               localizable: true
               width: 50
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
           -
             handle: email
             field:
-              display: 'Email address'
+              display: Email-Adresse
               type: text
-              validate: required|email
+              validate:
+                - required
+                - email
               localizable: true
               width: 50
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: subject
+            field:
+              options:
+                appointment: 'Ich möchte einen Termin vereinbaren'
+                question: 'Ich habe eine Frage'
+                other: Sonstiges
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Subject
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
           -
             handle: message_body
             field:
