@@ -4,5 +4,6 @@ blueprint: team
 title: 'Isabell Schoderer'
 function: 'Auszubildende zur Zahnmedizinische Fachangestellten'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692774885
+updated_at: 1693336003
+portrait: team/zvk_22.jpg
 ---

@@ -4,6 +4,6 @@ blueprint: team
 title: 'Tülin Kentner'
 function: 'Zahnmedizinische Fachangestellte'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776761
-portrait: team/7123.jpg
+updated_at: 1693336205
+portrait: team/zvk_17.jpg
 ---

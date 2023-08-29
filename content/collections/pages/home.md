@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692918433
+updated_at: 1693337468
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -30,7 +30,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Am 01.01.2017 habe ich als Nachfolger von Dr. Karl Nowy die Praxis übernommen. Neben mir stehen Ihnen ein angestellter Zahnarzt und das bewährte Praxisteam zur Verfügung!'
+            text: 'Am 01.01.2017 habe ich als Nachfolger von Dr. Karl Nowy die Praxis übernommen. Neben mir stehen Ihnen eine angestellte Zahnärztin, ein angestellter Zahnarzt und ein engagiertes Praxisteam zur Verfügung!'
       -
         type: paragraph
         content:
@@ -65,5 +65,5 @@ page_builder:
 headline: |-
   Herzlich Willkommen auf der Homepage
   der Zahnarztpraxis Dr. Volker Küspert
-banner_image: zvk_home-1692918430.jpg
+banner_image: zvk_home-1693318493.jpg
 ---

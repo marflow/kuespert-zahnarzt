@@ -4,6 +4,6 @@ blueprint: team
 title: 'Jessica Schreiber'
 function: 'Zahnmedizinische Fachangestellte'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776730
-portrait: team/7088.jpg
+updated_at: 1693336071
+portrait: team/zvk_19.jpg
 ---

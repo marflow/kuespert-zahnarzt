@@ -4,6 +4,6 @@ blueprint: team
 title: 'Jeannette Kopf'
 function: 'Zahnmedizinische Prophylaxeassistentin, Rezeption'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776744
-portrait: team/7115.jpg
+updated_at: 1693336020
+portrait: team/zvk_18.jpg
 ---

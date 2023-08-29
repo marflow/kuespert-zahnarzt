@@ -4,6 +4,6 @@ blueprint: team
 title: 'Karina Klar'
 function: 'Zahnmedizinische Fachangestellte'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776789
-portrait: team/7131.jpg
+updated_at: 1693336099
+portrait: team/zvk_16.jpg
 ---

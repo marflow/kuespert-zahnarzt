@@ -4,6 +4,6 @@ blueprint: team
 title: 'Alina Köhler'
 function: 'Zahnmedizinische Fachangestellte'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776802
-portrait: team/7160.jpg
+updated_at: 1693335861
+portrait: team/zvk_12.jpg
 ---

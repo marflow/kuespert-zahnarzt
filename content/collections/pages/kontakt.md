@@ -26,6 +26,6 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692918523
-banner_image: zvk_kontakt-1692918521.jpg
+updated_at: 1693320212
+banner_image: zvk_kontakt.jpg
 ---

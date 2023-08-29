@@ -4,6 +4,6 @@ blueprint: team
 title: 'Sandra Fesenmeir'
 function: 'Zahnmedizinische Fachangestellte'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776698
-portrait: team/7040.jpg
+updated_at: 1693336188
+portrait: team/zvk_11.jpg
 ---

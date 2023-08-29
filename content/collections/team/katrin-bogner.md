@@ -4,6 +4,6 @@ blueprint: team
 title: 'Katrin Bogner'
 function: 'Zahnmedizinische Fachangestellte'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776855
-portrait: team/7266.jpg
+updated_at: 1693336112
+portrait: team/zvk_15.jpg
 ---

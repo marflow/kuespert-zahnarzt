@@ -4,6 +4,6 @@ blueprint: team
 title: 'Carina Riemer-Möller'
 function: 'Zahnmedizinische Verwaltungsassistentin, Abrechnung'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1692776920
-portrait: team/7346.jpg
+updated_at: 1693335905
+portrait: team/zvk_09.jpg
 ---
