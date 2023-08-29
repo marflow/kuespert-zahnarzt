@@ -13,8 +13,8 @@
 
 {{ section:index_content }}
     <!-- /team/index.antlers.html -->
-    <div class="fluid-container mt-4 md:mt-12 grid md:grid-cols-12 gap-12">
-        {{ collection:team as="items" }}
+    <div class="fluid-container mt-4 md:mt-12 grid md:grid-cols-12 gap-4">
+        {{ collection:team as="items" sort="random" }}
                 {{ items }}
                     {{ partial:components/team_item class="md:col-span-3" }}
                 {{ /items }}
