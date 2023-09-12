@@ -4,6 +4,6 @@ blueprint: team
 title: 'Joanna Sidor'
 function: 'Zahnmedizinische Fachangestellte, Rezeption'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1693336086
-portrait: team/zvk_20.jpg
+updated_at: 1694542134
+portrait: zvk_20-1694542130.jpg
 ---
