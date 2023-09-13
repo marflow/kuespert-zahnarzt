@@ -4,6 +4,6 @@ blueprint: team
 title: 'Vanessa Härle'
 function: 'Zahnmedizinische Fachangestellte, aktuell im Mutterschutz'
 updated_by: 8c9816a1-2d9a-4b41-8090-aae253815de3
-updated_at: 1694542282
-portrait: zvk_04.jpg
+updated_at: 1694610301
+portrait: zvk_04-1694610298.jpg
 ---
