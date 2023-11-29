@@ -51,12 +51,14 @@ editor:
     - 'edit other authors news entries'
     - 'publish other authors news entries'
     - 'delete other authors news entries'
+    - 'access default site'
 marketeer:
   title: Marketeer
   permissions:
     - 'access cp'
     - 'edit redirects globals'
     - 'edit seo globals'
+    - 'access default site'
 user_management:
   title: 'User management'
   permissions:
@@ -68,3 +70,4 @@ user_management:
     - 'change passwords'
     - 'assign roles'
     - 'assign user groups'
+    - 'access default site'

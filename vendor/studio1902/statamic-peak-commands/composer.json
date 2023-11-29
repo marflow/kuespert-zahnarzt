@@ -1,0 +1,22 @@
+{
+    "name": "studio1902/statamic-peak-commands",
+    "autoload": {
+        "psr-4": {
+            "Studio1902\\PeakCommands\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Peak Commands",
+            "description": "Statamic Peak Commands addon"
+        },
+        "laravel": {
+            "providers": [
+                "Studio1902\\PeakCommands\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "laravel/prompts": "^0.1"
+    }
+}
