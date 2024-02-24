@@ -1,8 +1,113 @@
 # Changelog
 
+## v8.2.0 (2024-02-14)
+
+### What's improved
+- Filter out entries without a permalink from the sitemap. 7a7ec41f by @robdekort
+
+## v8.1.1 (2024-02-09)
+
+### What's fixed
+- A faulty condition in the SEO snippet. 1fbe159c by @robdekort
+
+## v8.1.0 (2024-01-26)
+
+### What's new
+- Ability to use Antlers in inline scripts behind the consent banner. b33c85cb by @robdekort
+
+## v8.0.0 (2024-01-05)
+
+### What's new
+- The Cookie banner is now called Consent banner and fully rewritten. An update script should automatically take care of all [changes needed in Peak](https://github.com/studio1902/statamic-peak/pull/374). #40 by @robdekort and @marcorieser
+
+## v7.5.0 (2023-12-15)
+
+### What's new
+- Support script attributes when using the cookie banner. 9981c660 and bff684d2 by @robdekort
+
+## v7.4.3 (2023-12-15)
+
+### What's fixed
+- Fix attributes field condition. Sorry. 7eca9029 by @robdekort
+
+## v7.4.2 (2023-12-15)
+
+### What's improved
+- Support attributes on script tags as well. 00f3f63f by @robdekort
+
+## v7.4.1 (2023-12-14)
+
+### What's fixed
+- Use `entities` modifier for attribute values. d65ff3f1 by @robdekort
+
+## v7.4.0 (2023-12-14)
+
+### What's new
+- The option to add attributes to an inline script. c0953d63 by @robdekort
+
+## v7.3.2 (2023-12-08)
+
+### What's fixed
+- Prevent 500 error in Statamic v4.39.0. 327de799 by @robdekort
+
+## v7.3.1 (2023-11-28)
+
+### What's fixed
+- Enforce use of the redirect tag. #38 by @freshface
+
+## v7.3.0 (2023-11-22)
+
+### What's new
+- Added `og:url`` to SEO partial. #36 by @vannut
+
+## v7.2.2 (2023-11-21)
+
+### What's fixed
+- Fixed a Cookie Banner issue where embed consent required a reload for the embeds to show. 1c9f8f2b by @robdekort
+
+## v7.2.1 (2023-11-13)
+
+### What's improved
+- Prevent loop when both Sitemap and Social Images are disabled. 61667e30 by @robdekort
+
+## v7.2.0 (2023-11-13)
+
+### What's new
+- Add an option to disable the Sitemap functionality. f6fca686 by @robdekort
+
+## v7.1.0 (2023-11-09)
+
+### What's new
+- Add middle dot page title separator. 4a1310c4 by @robdekort
+
+## v7.0.4 (2023-11-01)
+
+### What's fixed
+- Register Sitemap and Social Images routes explicitely per site. #35 by @marcorieser
+
+## v7.0.3 (2023-09-21)
+
+### What's improved
+- Only add Cookie notice global fields if they don't exist yet. 28dd3d6e by @robdekort
+
+## v7.0.2 (2023-09-11)
+
+### What's improved
+- Update Privacy Policy and Cookie Notice field instructions. fc2e884c by @robdekort
+
+## v7.0.1 (2023-09-09)
+
+### What's fixed
+- Fix AddCookieNotice update script version constrainst. 1eb84bd4 by @robdekort
+
+## v7.0 (2023-09-09)
+
+### What's new
+- Add Cookie Notice Global and use this Entry or PDF in the Cookie Banner instead of the Privacy Policy. An Update Script will automatically add this to your Globals. #32 by @robdekort
+
 ## v6.0.1 (2023-09-04)
 
-### What's changed
+### What's fixed
 - Fix wrong loop ending. #31 by @stefankempf
 
 ## v6.0 (2023-08-22)
