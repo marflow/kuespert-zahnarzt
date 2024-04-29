@@ -1,10 +1,33 @@
-/* If you don't want to use the JS in CSS syntax from `tailwind.config.site.js` you can add your own custom CSS here. Use different layers to make sure your CSS either get's purged or not: https://tailwindcss.com/docs/functions-and-directives#layer. CSS in the base layer won't get purged. */
-
 @layer base {
 
 }
 
 @layer components {
+
+	.header {
+		@apply sticky md:pt-4 lg:pt-12;
+		top: 0;
+		z-index: 100;
+	}
+
+	.header-start {
+		@apply w-full ;
+		transition: all .25s ease-in-out; /* Sanfter Übergang für die Position */
+	}
+
+	.header .masthead {
+		@apply w-full mb-4 md:mb-8;
+	}
+
+	.header-scroll {
+		@apply md:pt-0 bg-gray-100 shadow-lg shadow-slate-200;
+		transition: all .25s ease-in-out; /* Sanfter Übergang für die Position */
+	}
+
+	.header-scroll .masthead {
+		@apply mb-2;
+		transition: all .25s ease-in-out; /* Sanfter Übergang für die Position */
+	}
 
 }
 

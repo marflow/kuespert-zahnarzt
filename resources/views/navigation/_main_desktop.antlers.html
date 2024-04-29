@@ -4,11 +4,11 @@
 #}}
 
 <!-- /navigation/_main_desktop.antlers.html -->
-<nav class="hidden md:block md:mb-1" aria-label="{{ trans:strings.main_navigation }}">
+<nav class="hidden md:block" aria-label="{{ trans:strings.main_navigation }}">
     <ul class="flex border-l border-gray-200">
         {{ nav:main max_depth="2" include_home="true" select="title|url" }}
             <li class="relative leading-none border-r border-gray-200 flex-1">
-                <a href="{{ url }}" class="py-4 flex justify-center uppercase tracking-wider text-gray-500 text-sm hover:bg-gray-50 hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary
+                <a href="{{ url }}" class="py-1 flex justify-center uppercase tracking-wider text-gray-500 text-sm hover:bg-gray-50 hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary
                         {{ is_current || is_parent ? 'text-primary' : 'text-neutral' }}">
                     {{ title }}
                 </a>

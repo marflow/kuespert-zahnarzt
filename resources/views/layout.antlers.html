@@ -48,6 +48,23 @@
 			{{ partial:components/aside }}
 			{{ partial:layout/footer }}
 		</div>
+		<script>
+			window.onscroll = function() {makeSticky()};
+
+			var header = document.getElementById("siteHeader");
+			var stickyOffset = 20;
+			var initialPosition = header.offsetTop;
+
+			function makeSticky() {
+				if (window.pageYOffset > stickyOffset) {
+				header.classList.add("header-scroll");
+				header.classList.remove("header-start");
+				} else {
+				header.classList.add("header-start");
+				header.classList.remove("header-scroll");
+				}
+			}
+		</script>
 		<script type="text/javascript">
 			var _2ClickIframePrivacyConfig = {
 				showContentLabel: '<span class="py-2 px-4 border border-gray-600 rounded text-blue-200 hover:text-white bg-blue-800 hover:bg-blue-700 shadow">Google Maps laden</span><br>',

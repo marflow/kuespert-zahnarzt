@@ -4,10 +4,10 @@
 #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="w-full p-1 sticky md:pt-4 lg:pt-8 top-0 bg-white">
+<header id="siteHeader" class="header w-full bg-white">
     <div class="fluid-container">
         {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
-		<div class="w-full flex justify-between items-center">
+		<div class="masthead w-full flex justify-between items-center pt-2 md:pt-4">
 			{{ partial:components/logo }}
 			<div class="flex gap-1">
 				{{ partial:components/hotline }}
@@ -15,9 +15,9 @@
 			</div>
 
 		</div>
-		<div class="">
-			{{ partial:navigation/main }}
-		</div>
     </div>
+	<div class="">
+		{{ partial:navigation/main }}
+	</div>
 </header>
 <!-- End: /layout/_header.antlers.html -->
