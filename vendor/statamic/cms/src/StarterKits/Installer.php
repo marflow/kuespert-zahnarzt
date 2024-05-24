@@ -19,6 +19,7 @@ use Statamic\Support\Str;
 final class Installer
 {
     protected $package;
+    protected $branch;
     protected $licenseManager;
     protected $files;
     protected $fromLocalRepo;
@@ -39,7 +40,9 @@ final class Installer
     public function __construct(string $package, $console = null, ?LicenseManager $licenseManager = null)
     {
         $this->package = $package;
+
         $this->licenseManager = $licenseManager;
+
         $this->console = $console ?? new Nullconsole;
 
         $this->files = app(Filesystem::class);
@@ -54,6 +57,19 @@ final class Installer
     public static function package(string $package, $console = null, ?LicenseManager $licenseManager = null)
     {
         return new self($package, $console, $licenseManager);
+    }
+
+    /**
+     * Install from specific branch.
+     *
+     * @param  string|null  $branch
+     * @return $this
+     */
+    public function branch($branch = null)
+    {
+        $this->branch = $branch;
+
+        return $this;
     }
 
     /**
@@ -250,10 +266,14 @@ final class Installer
     {
         $this->console->info("Preparing starter kit [{$this->package}]...");
 
+        $package = $this->branch
+            ? "{$this->package}:{$this->branch}"
+            : $this->package;
+
         try {
-            Composer::withoutQueue()->throwOnFailure()->requireDev($this->package);
+            Composer::withoutQueue()->throwOnFailure()->requireDev($package);
         } catch (ProcessException $exception) {
-            $this->rollbackWithError("Error installing starter kit [{$this->package}].", $exception->getMessage());
+            $this->rollbackWithError("Error installing starter kit [{$package}].", $exception->getMessage());
         }
 
         return $this;

@@ -37,6 +37,10 @@ class CpServiceProvider extends ServiceProvider
             return "<?php echo Statamic::svg({$expression}) ?>";
         });
 
+        Blade::directive('rarr', function ($expression) {
+            return "<?php echo Statamic::cpDirection() === 'ltr' ? '&rarr;' : '&larr;' ?>";
+        });
+
         Sets::setIconsDirectory();
 
         $this->registerMiddlewareGroups();
@@ -88,6 +92,7 @@ class CpServiceProvider extends ServiceProvider
             \Statamic\Http\Middleware\CP\BootPreferences::class,
             \Statamic\Http\Middleware\CP\BootUtilities::class,
             \Statamic\Http\Middleware\CP\CountUsers::class,
+            \Statamic\Http\Middleware\CP\AddVaryHeaderToResponse::class,
             \Statamic\Http\Middleware\DeleteTemporaryFileUploads::class,
         ]);
     }
