@@ -1,2 +1,7 @@
 {
+	"editor.fontFamily": "\"IBM Plex Mono\", monospace",
+	"editor.fontSize": 16,
+	"zenMode.hideActivityBar": true,
+	"breadcrumbs.enabled": false,
+	"tailwind-fold.unfoldIfLineSelected": true
 }
