@@ -16,10 +16,10 @@
         "laravel/tinker": "^2.8",
         "spatie/browsershot": "^3.58",
         "statamic/cms": "4.58.2",
-        "studio1902/statamic-peak-browser-appearance": "^3.0",
-        "studio1902/statamic-peak-commands": "^2.0",
-        "studio1902/statamic-peak-seo": "^8.2.0",
-        "studio1902/statamic-peak-tools": "^3.4.3"
+        "studio1902/statamic-peak-browser-appearance": "3.3.4",
+        "studio1902/statamic-peak-commands": "2.0",
+        "studio1902/statamic-peak-seo": "8.2.0",
+        "studio1902/statamic-peak-tools": "3.4.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8.1",
